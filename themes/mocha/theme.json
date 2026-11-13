@@ -153,27 +153,27 @@
           "x": 28,
           "y": 32,
           "drift": 28,
-          "color": "#94e2d58c",
+          "color": "#cba6f7b8",
           "blur": 80,
-          "opacity": 0.56
+          "opacity": 0.86
         },
         {
           "size": 66,
           "x": 79,
           "y": 61,
           "drift": 36,
-          "color": "#cba6f775",
+          "color": "#94e2d5cc",
           "blur": 80,
-          "opacity": 0.56
+          "opacity": 0.86
         },
         {
           "size": 62,
           "x": 49,
           "y": 86,
           "drift": 42,
-          "color": "#89b4fa75",
+          "color": "#89b4fab8",
           "blur": 80,
-          "opacity": 0.56
+          "opacity": 0.86
         }
       ],
       "image": null,

@@ -14,6 +14,10 @@ Both variants include complete UI, syntax, editor, diff and terminal palettes.
 The terminal stays dark in both variants, using the Mocha ANSI colors.
 CadencR controls the halo animation and honors reduced motion.
 
+The mauve halo sits toward the upper left, teal toward the right, and blue
+toward the bottom. Version `0.1.1` increases the halo intensity in both variants.
+The screenshots below show `0.1.0`, before that intensity and position update.
+
 ### Mocha
 
 ![Catppuccin Frost Mocha in CadencR](assets/mocha.png)
@@ -46,15 +50,17 @@ tokens, the xterm palette, and the halo/grain geometry under `chrome.texture`.
 There are no scripts, executables, dependencies or external image requests.
 
 These portable themes carry the Frost ambient field and translucent colors.
-CadencR's theme format does not accept arbitrary CSS, so the built-in Frost
-theme's additional blur, shadows and component-specific material rules are
-not part of these packages. The previews show the portable themes.
+CadencR's theme format does not accept arbitrary CSS. Blur, shadows and
+component-specific material rules are controlled by the app, rather than
+included in these packages. Frosted popovers and dialogs require a CadencR
+build with support for textured-theme overlays; installing `0.1.1` alone does
+not add that application behavior.
 
 ## Validate and package
 
 Use the CadencR CLI version qualified by
 [`cadencr-registry/ci/released-cli.env`](https://github.com/merkr-software/cadencr-registry/blob/main/ci/released-cli.env).
-The initial release uses CLI `0.15.7`.
+Release `0.1.1` uses CLI `0.15.7`.
 
 ```bash
 cadencr plugin validate themes/mocha --kind theme
@@ -64,7 +70,7 @@ sh scripts/package.sh dist
 
 The packaging script refuses to overwrite existing archives. It writes two
 exact-version `.tar.gz` files and prints their SHA-256 receipts. Each variant
-is a separate marketplace theme, released together under `v0.1.0`.
+is a separate marketplace theme, released together under `v0.1.1`.
 
 ## License and provenance
 

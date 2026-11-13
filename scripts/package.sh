@@ -4,7 +4,7 @@ set -eu
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd -P)
 output=${1:-"$root/dist"}
 cli=${CADENCR_CLI:-cadencr}
-version=0.1.0
+version=0.1.1
 
 mkdir -p "$output"
 output=$(CDPATH= cd -- "$output" && pwd -P)
